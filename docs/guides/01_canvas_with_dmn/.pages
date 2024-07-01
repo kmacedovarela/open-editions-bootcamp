@@ -1,0 +1,5 @@
+nav:
+  - "Exploring Canvas & Decisions":
+      - index.md
+      - "Canvas & DMN": 01_introduction_canvas_dmn.md
+      - "Exploring Canvas": 02_explore_dmn.md
