@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Karina Varela" name="author"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-8.3.8" name="generator"/>
+<title>Exploring Canvas - Open Editions BootCamp</title>
+<link href="../../../assets/stylesheets/main.1d29e8d0.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="light-blue" data-md-color-primary="blue" data-md-color-scheme="slate" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#exploring-canvas-decisions">7. 
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Open Editions BootCamp" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Open Editions BootCamp">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Open Editions BootCamp
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Exploring Canvas
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="light-blue" data-md-color-media="" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="light-blue" data-md-color-media="" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ibm/bamoe-bootcamp" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+      Open Editions Bootcamp
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../../00_intro/">
+        Guides
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Open Editions BootCamp" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Open Editions BootCamp">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Open Editions BootCamp
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ibm/bamoe-bootcamp" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 480 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Open Editions Bootcamp
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Guides" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" id="__nav_2_1" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../00_intro/">Getting Started</a>
+<label for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Getting Started" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../00_intro/02_bamoe_basics/">
+        Overview of IBM Business Automation Manager Open Editions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../00_intro/03_use_case_overview/">
+        Use Case Overview
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../00_intro/04_env_setup/">
+        Environment Setup
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../">Exploring Canvas &amp; Decisions</a>
+<label for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="Exploring Canvas &amp; Decisions" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          Exploring Canvas &amp; Decisions
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../01_introduction_canvas_dmn/">
+        Canvas &amp; DMN
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Exploring Canvas
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Exploring Canvas
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#value-of-dmn-automation">7.1 
+    Value of DMN Automation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#importing-dmn-projects-into-canvas">7.2 
+    Importing DMN Projects into Canvas
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#credit-card-eligibility-dmn-model">7.3 
+    Credit Card Eligibility DMN Model
+  </a>
+<nav aria-label="Credit Card Eligibility DMN Model" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#key-elements">7.3.1 
+    Key Elements
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exploring-the-decision-model">7.4 
+    Exploring the Decision Model
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-the-decision">7.5 
+    Running the Decision
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-the-dev-deployment">7.6 
+    Using the Dev Deployment
+  </a>
+<nav aria-label="Using the Dev Deployment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#about-the-dev-deployment">7.6.1 
+    About the Dev Deployment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#steps-to-deploy">7.6.2 
+    Steps to Deploy
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-the-rest-apis">7.6.3 
+    Testing the REST APIs
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#value-of-dmn-automation">7.1 
+    Value of DMN Automation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#importing-dmn-projects-into-canvas">7.2 
+    Importing DMN Projects into Canvas
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#credit-card-eligibility-dmn-model">7.3 
+    Credit Card Eligibility DMN Model
+  </a>
+<nav aria-label="Credit Card Eligibility DMN Model" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#key-elements">7.3.1 
+    Key Elements
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exploring-the-decision-model">7.4 
+    Exploring the Decision Model
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#running-the-decision">7.5 
+    Running the Decision
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-the-dev-deployment">7.6 
+    Using the Dev Deployment
+  </a>
+<nav aria-label="Using the Dev Deployment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#about-the-dev-deployment">7.6.1 
+    About the Dev Deployment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#steps-to-deploy">7.6.2 
+    Steps to Deploy
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-the-rest-apis">7.6.3 
+    Testing the REST APIs
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="exploring-canvas-decisions"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.</span> Exploring Canvas &amp; Decisions<a class="headerlink" href="#exploring-canvas-decisions" title="Permanent link">¶</a></h1>
+<p>In this section, we will import an existing DMN project into BAMOE Canvas and explore its decision models and automation capabilities.</p>
+<h2 id="value-of-dmn-automation"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.1</span> Value of DMN Automation<a class="headerlink" href="#value-of-dmn-automation" title="Permanent link">¶</a></h2>
+<ol>
+<li><strong>Consistency</strong>: Ensures uniform application of eligibility criteria across all applications.</li>
+<li><strong>Efficiency</strong>: Rapidly processes applications, reducing manual workload.</li>
+<li><strong>Flexibility</strong>: Allows easy updates to decision logic without changing the underlying process.</li>
+<li><strong>Transparency</strong>: Provides clear decision rationale, aiding in regulatory compliance.</li>
+<li><strong>Scalability</strong>: Handles increasing application volumes without proportional increase in resources.</li>
+</ol>
+<h2 id="importing-dmn-projects-into-canvas"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.2</span> Importing DMN Projects into Canvas<a class="headerlink" href="#importing-dmn-projects-into-canvas" title="Permanent link">¶</a></h2>
+<p>To start, let's import a DMN file into Canvas. We will use a credit card eligibility use case to illustrate this process.</p>
+<ol>
+<li>Open Canvas in your browser.</li>
+<li>To import the DMN file, in Canvas go to the Import menu and select "From URL".</li>
+<li>Copy and paste the following link and click Import: https://example.com/credit-card-eligibility.dmn</li>
+</ol>
+<h2 id="credit-card-eligibility-dmn-model"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.3</span> Credit Card Eligibility DMN Model<a class="headerlink" href="#credit-card-eligibility-dmn-model" title="Permanent link">¶</a></h2>
+<p>This DMN (Decision Model and Notation) model automates the initial eligibility assessment for credit card applications.</p>
+<p><img alt="dmn-model.png" src="../images/dmn-model.png"/></p>
+<p>It evaluates applicant information to determine whether an application should be automatically approved, rejected, or sent for manual review.</p>
+<h3 id="key-elements"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.3.1</span> Key Elements<a class="headerlink" href="#key-elements" title="Permanent link">¶</a></h3>
+<ol>
+<li><strong>Input Node</strong>: Applicant information (age, credit score, annual income, student status)</li>
+<li><strong>Decision Nodes</strong>:</li>
+<li>Eligibility Score Calculation: Assigns a score based on applicant criteria</li>
+<li>Determine Eligibility: Interprets the score to make a final decision</li>
+<li><strong>Output</strong>: Eligibility result (Approved, Rejected, or Manual Review)</li>
+</ol>
+<h2 id="exploring-the-decision-model"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.4</span> Exploring the Decision Model<a class="headerlink" href="#exploring-the-decision-model" title="Permanent link">¶</a></h2>
+<ol>
+<li>
+<p>Click on the Data Types tab. In it, you can see the <code>Applicant</code> type, which includes the attributes: age (Number), creditScore (Number), annualIncome (Number), and isStudent (Boolean).
+   <img alt="data-type-tab.png" src="../images/data-type-tab.png"/></p>
+</li>
+<li>
+<p>Now, click on the <code>Editor</code> tab and let's check the decision nodes. Click on the <code>Eligibility Score Calculation</code> node and observe it is of type Number and contains a decision table for calculating the eligibility score based on the applicant's criteria.</p>
+</li>
+<li>Next, check the <code>Determine Eligibility</code> decision node, which is of type String and uses a FEEL expression to determine the eligibility result based on the calculated score.</li>
+</ol>
+<h2 id="running-the-decision"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.5</span> Running the Decision<a class="headerlink" href="#running-the-decision" title="Permanent link">¶</a></h2>
+<ol>
+<li>
+<p>Click on the Run button to see the form that was automatically generated on the right side of the screen.
+   <img alt="dmn-run.png" src="../images/dmn-run.png"/></p>
+</li>
+<li>
+<p>Try out the decision using the test scenarios below.</p>
+</li>
+</ol>
+<p><strong>Test Scenarios</strong></p>
+<p>Some examples of input and output data that can validate the decision:</p>
+<table>
+<thead>
+<tr>
+<th>Is Student</th>
+<th>Annual Income</th>
+<th>Credit Score</th>
+<th>Age</th>
+<th>Expected Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>false</td>
+<td>30000</td>
+<td>700</td>
+<td>17</td>
+<td>Rejected</td>
+</tr>
+<tr>
+<td>false</td>
+<td>40000</td>
+<td>500</td>
+<td>25</td>
+<td>Manual Review</td>
+</tr>
+<tr>
+<td>false</td>
+<td>60000</td>
+<td>720</td>
+<td>30</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>true</td>
+<td>5000</td>
+<td>600</td>
+<td>19</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>false</td>
+<td>80000</td>
+<td>650</td>
+<td>45</td>
+<td>Approved</td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-the-dev-deployment"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.6</span> Using the Dev Deployment<a class="headerlink" href="#using-the-dev-deployment" title="Permanent link">¶</a></h2>
+<h3 id="about-the-dev-deployment"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.6.1</span> About the Dev Deployment<a class="headerlink" href="#about-the-dev-deployment" title="Permanent link">¶</a></h3>
+<p>Dev deployments in BAMOE Canvas allow you to deploy Decisions to both local Kubernetes instances and remote Kubernetes/OpenShift environments for development purposes.</p>
+<p>With it, you can deploy all Decisions within a project. After a short deployment process, you will be able to access a web application provided by BAMOE Canvas for testing and interacting with your Decisions. This web application includes a form similar to the one you used when running a decision in Canvas. Along with the form, it also provides access to the Swagger UI with the Decisions' API information.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Dev deployments are immutable, meaning if you need to make changes or if an error occurs, you must create a new deployment. Dev deployments can be easily managed and deleted from the Dev deployments dropdown.</p>
+</div>
+<h3 id="steps-to-deploy"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.6.2</span> Steps to Deploy<a class="headerlink" href="#steps-to-deploy" title="Permanent link">¶</a></h3>
+<ol>
+<li>With the decision model opened, click on deploy.</li>
+<li>
+<p>In the pop-up that opens up, choose the option "Kogito Quarkus Blank App" for "Choose your deployment option".
+    <img alt="dev-deploy.png" src="../images/dev-deploy.png"/></p>
+</li>
+<li>
+<p>Check the checkbox for "Whether to deploy the DMN Form Webapp as a sidecar container or not".</p>
+</li>
+<li>Click on confirm.</li>
+<li>
+<p>Click on "Dev Deployments" on the top menu bar to show the deployment status.
+     <img alt="dev-deploy-in-progress.png" src="../images/dev-deploy-in-progress.png"/></p>
+</li>
+<li>
+<p>When available (shows a green check), click on it to open the deployed service on a new page.</p>
+</li>
+</ol>
+<p>A new browser tab will open on a URL similar to this: <code>https://dev-deployment-yliell9512.apps.sandbox-m2.ll9k.p1.openshiftapps.com/form-webapp/#/form/Credit%20Card%20Eligibility%20Validation</code>, showing an automatically generated form.</p>
+<p>!!! <strong>Note</strong>:
+Dev deployments are intended to be used for development purposes only, so users should not use the deployed services in production or for any type of business-critical workloads.</p>
+<h3 id="testing-the-rest-apis"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.6.3</span> Testing the REST APIs<a class="headerlink" href="#testing-the-rest-apis" title="Permanent link">¶</a></h3>
+<p>After opening the deployed service by opening the service URL, append <code>/q/swagger-ui</code> to the URL to access the APIs.</p>
+<p>This is based on OpenAPI. You can access the OpenAPI file by opening <code>/q/openapi</code>.</p>
+<h4 id="evaluating-a-decision-using-rest"><span class="enumerate-headings-plugin enumerate-heading-plugin">7.6.3.1</span> Evaluating a Decision using REST<a class="headerlink" href="#evaluating-a-decision-using-rest" title="Permanent link">¶</a></h4>
+<p>Let's try using the POST endpoint available in swagger to fire a decision.</p>
+<ol>
+<li>
+<p>Access the swagger ui in the deployed decision service. Locate and click on the endpoint: POST <code>/Credit Card Eligibility Validation</code> </p>
+</li>
+<li>
+<p>Click on edit to use the input:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">{</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="nt">"Applicant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="nt">"isStudent"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="nt">"annualIncome"</span><span class="p">:</span><span class="w"> </span><span class="mi">30000</span><span class="p">,</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="nt">"creditScore"</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">,</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="p">}</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">}</span>
+</code></pre></div>
+<ol>
+<li>Observe the output, which should be similar to:
+   <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">"Eligibility Score Calculation"</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">,</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nt">"Determine Eligibility"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rejected"</span><span class="p">,</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="nt">"Applicant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="nt">"isStudent"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="nt">"annualIncome"</span><span class="p">:</span><span class="w"> </span><span class="mi">30000</span><span class="p">,</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span><span class="nt">"creditScore"</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">,</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="nt">"age"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">  </span><span class="p">}</span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="p">}</span>
+</code></pre></div></li>
+</ol>
+<hr/>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8-1.41-1.42Z"></path></svg></span> <em>Awesome!! You've successfully imported and explored a DMN project in Canvas. Now that you've seen how to model and test decisions.</em></p>
+<hr/>
+<div class="md-source-file">
+<small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-07-01</span>
+</small>
+</div>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Canvas &amp; DMN" class="md-footer__link md-footer__link--prev" href="../01_introduction_canvas_dmn/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Canvas &amp; DMN
+            </div>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.footer", "navigation.tabs.sticky", "navigation.prune", "toc.follow", "navigation.indexes", "navigation.top", "search.highlight", "search.share", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.0238f547.min.js"></script>
+</body>
+</html>
