@@ -8,7 +8,7 @@
 <meta content="Karina Varela" name="author"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-8.3.8" name="generator"/>
-<title>Getting Started with Exploring Canvas &amp; Decisions - Open Editions BootCamp</title>
+<title>Getting Started with Process Automation - Open Editions BootCamp</title>
 <link href="../../assets/stylesheets/main.1d29e8d0.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#getting-started-with-exploring-canvas-decisions">5. 
+<a class="md-skip" href="#getting-started-with-process-automation">8. 
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Getting Started with Exploring Canvas &amp; Decisions
+              Getting Started with Process Automation
             
           </span>
 </div>
@@ -197,10 +197,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index md-nav__link--active">
-<a href="./">Exploring Canvas &amp; Decisions</a>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../01_canvas_with_dmn/">Exploring Canvas &amp; Decisions</a>
 <label for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
 </label>
@@ -212,22 +212,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="01_introduction_canvas_dmn/">
+<a class="md-nav__link" href="../01_canvas_with_dmn/01_introduction_canvas_dmn/">
         Canvas &amp; DMN
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="02_explore_dmn/">
+<a class="md-nav__link" href="../01_canvas_with_dmn/02_explore_dmn/">
         Exploring Canvas
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../03_process_automation/">Exploring Process Automation</a>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index md-nav__link--active">
+<a href="./">Exploring Process Automation</a>
 </div>
 <nav aria-label="Exploring Process Automation" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_3">
@@ -256,9 +256,37 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#goals">5.1 
+<a class="md-nav__link" href="#goals">8.1 
     Goals:
   </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#about-bpmn-in-bamoe">8.2 
+    About BPMN in BAMOE
+  </a>
+<nav aria-label="About BPMN in BAMOE" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#note-on-automatic-marshalling">8.2.1 
+    Note on Automatic Marshalling
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cloning-the-project-and-running-quarkus-dev-mode">8.3 
+    Cloning the Project and Running Quarkus Dev Mode
+  </a>
+<nav aria-label="Cloning the Project and Running Quarkus Dev Mode" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#steps">8.3.1 
+    Steps:
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -267,24 +295,126 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="getting-started-with-exploring-canvas-decisions"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.</span> Getting Started with Exploring Canvas &amp; Decisions<a class="headerlink" href="#getting-started-with-exploring-canvas-decisions" title="Permanent link">¶</a></h1>
-<p>In this section, you will become familiar with the foundational concepts of IBM Business Automation Manager Open Editions (BAMOE) and use the main features of Canvas for decision automation using DMN.</p>
-<h2 id="goals"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.1</span> Goals:<a class="headerlink" href="#goals" title="Permanent link">¶</a></h2>
+<h1 id="getting-started-with-process-automation"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.</span> Getting Started with Process Automation<a class="headerlink" href="#getting-started-with-process-automation" title="Permanent link">¶</a></h1>
+<p>In this section, you will become familiar with the foundational concepts of IBM Business Automation Manager Open Editions (BAMOE) and use the main features of Canvas for process automation using BPMN.</p>
+<h2 id="goals"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.1</span> Goals:<a class="headerlink" href="#goals" title="Permanent link">¶</a></h2>
 <ul>
-<li>Get to know Canvas and DMN</li>
-<li>Import and Explore Projects:</li>
-<li>Test your decision models directly in Canvas.</li>
-<li>Deploy your decision models on OpenShift using Canvas Dev Deployment.</li>
-<li>Explore and try the REST endpoints provided by decision services in BAMOE.</li>
+<li>Clone the starter project created with the accelerator using git</li>
+<li>Download to the computer to work on VSCode using the Dev Tools extensions</li>
+<li>Use Quarkus dev mode and use the management console and task inbox</li>
+<li>Expand the process design: Script Task, Human Task, Timer Event, Service Task</li>
 </ul>
 <hr/>
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8-1.41-1.42Z"></path></svg></span> <em>Let's move forward and get a quick overview of the value of open standards for decision automation.</em></p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8-1.41-1.42Z"></path></svg></span> <em>Let's get started.</em></p>
+<h2 id="about-bpmn-in-bamoe"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.2</span> About BPMN in BAMOE<a class="headerlink" href="#about-bpmn-in-bamoe" title="Permanent link">¶</a></h2>
+<p>BPMN nodes provide a variety of functionalities to automate business processes. Here's a quick overview of some key BPMN nodes and their purposes:</p>
+<table>
+<thead>
+<tr>
+<th><strong>BPMN Node</strong></th>
+<th><strong>Purpose</strong></th>
+<th><strong>When to Use</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Script Task</td>
+<td>Execute code within process</td>
+<td>Quick, simple logic</td>
+<td>Calculate a value in JavaScript</td>
+</tr>
+<tr>
+<td>Service Task</td>
+<td>Invoke external services</td>
+<td>Integrate with other systems</td>
+<td>Call a REST API</td>
+</tr>
+<tr>
+<td>Human Task</td>
+<td>Involve human interaction</td>
+<td>Manual input/approval needed</td>
+<td>Assign approval to manager</td>
+</tr>
+<tr>
+<td>Timer Event</td>
+<td>Time-based events</td>
+<td>Scheduling, delays, timeouts</td>
+<td>Wait 24h before reminder</td>
+</tr>
+<tr>
+<td>Gateway</td>
+<td>Control process flow</td>
+<td>Decision points, parallel processing</td>
+<td>Route high-value orders differently</td>
+</tr>
+<tr>
+<td>DMN Task</td>
+<td>Execute complex decision logic</td>
+<td>Tabular/tree decisions</td>
+<td>Determine credit eligibility</td>
+</tr>
+</tbody>
+</table>
+<h3 id="note-on-automatic-marshalling"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.2.1</span> Note on Automatic Marshalling<a class="headerlink" href="#note-on-automatic-marshalling" title="Permanent link">¶</a></h3>
+<p>BAMOE auto-maps process variables to DMN inputs/outputs by name and type. Here's a simplified explanation:</p>
+<p><strong>Automatic Marshalling in BAMOE</strong>:</p>
+<p>The <strong>basic principle</strong> of this capability relies on BAMOE usage of Java reflection to convert POJOs (Plain Old Java Objects) to DMN data types and vice versa.</p>
+<p>It can be seen when: 
+  - <strong>When passing data from process to DMN</strong>:
+    - It maps POJO fields to corresponding DMN input fields.
+  - <strong>When receiving data from DMN to process</strong>:
+    - DMN output is converted back into the appropriate Java object.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Matching Criteria</strong>:
+  - Field names in the POJO should match DMN input/output names.
+  - Data types should be compatible (e.g., Java String to DMN string).
+<strong>Complex Types</strong>:
+  - For nested objects, BAMOE recursively applies the same mapping process.
+  - It can handle lists and maps as well.</p>
+</div>
+<p>This automatic marshalling simplifies data exchange between BAMOE processes and DMN decision services, reducing the need for manual data transformation in many cases.</p>
+<h2 id="cloning-the-project-and-running-quarkus-dev-mode"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.3</span> Cloning the Project and Running Quarkus Dev Mode<a class="headerlink" href="#cloning-the-project-and-running-quarkus-dev-mode" title="Permanent link">¶</a></h2>
+<p>First, let's clone the starter project to your local repository and set up your environment to run it using Quarkus dev mode.</p>
+<h3 id="steps"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.3.1</span> Steps:<a class="headerlink" href="#steps" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p><strong>Clone the Repository</strong>:
+   <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/kmacedovarela/cc-application-approval-starter
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>cc-application-approval-starter
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Run Maven Quarkus Dev Mode</strong>:
+   <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>mvn<span class="w"> </span>quarkus:dev
+</code></pre></div></p>
+</li>
+<li>
+<p>Open the Browser and navigate to <code>http://localhost:8080/q/dev-ui</code>.</p>
+<p><img alt="dev-deploy.png" src="images/dev-ui.png"/></p>
+</li>
+<li>
+<p>Locate and click on <em>Process instances</em> in the jBPM Quarkus Dev UI add-on.</p>
+<p><img alt="process-def" src="images/starter-start-process-definition.png"/></p>
+</li>
+<li>
+<p>Start a new process from the process definition list.</p>
+<p><img alt="process-def" src="images/start-process.png"/></p>
+</li>
+<li>
+<p>Open the process details, and check the process instance progress, and the variable values.</p>
+<p><img alt="process-def" src="images/3-cc-application-approval.png"/></p>
+</li>
+</ol>
+<hr/>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8-1.41-1.42Z"></path></svg></span> <em>Awesome!! You've successfully cloned the project and started it using Quarkus dev mode. Next, let's explore how to extend the process design with various tasks in Canvas.</em></p>
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-07-01</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-07-02</span>
 </small>
 </div>
 </article>
@@ -297,7 +427,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Environment Setup" class="md-footer__link md-footer__link--prev" href="../00_intro/04_env_setup/" rel="prev">
+<a aria-label="Previous: Exploring Canvas" class="md-footer__link md-footer__link--prev" href="../01_canvas_with_dmn/02_explore_dmn/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -306,21 +436,8 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Environment Setup
+              Exploring Canvas
             </div>
-</div>
-</a>
-<a aria-label="Next: Canvas &amp; DMN" class="md-footer__link md-footer__link--next" href="01_introduction_canvas_dmn/" rel="next">
-<div class="md-footer__title">
-<div class="md-ellipsis">
-<span class="md-footer__direction">
-                Next
-              </span>
-              Canvas &amp; DMN
-            </div>
-</div>
-<div class="md-footer__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
 </div>
 </a>
 </nav>
