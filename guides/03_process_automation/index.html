@@ -227,20 +227,25 @@
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index md-nav__link--active">
-<a href="./">Exploring Process Automation</a>
+<a href="./">Process Automation: Getting Started</a>
 <label for="__nav_2_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="Exploring Process Automation" class="md-nav" data-md-level="2">
+<nav aria-label="Process Automation: Getting Started" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_3">
 <span class="md-nav__icon md-icon"></span>
-          Exploring Process Automation
+          Process Automation: Getting Started
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="using-dmn-bpmn/">
-        Automating Decisions in Processes with DMN
+<a class="md-nav__link" href="00_intro_process/">
+        Running a basic process service
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="01_using-dmn-bpmn/">
+        Using DMN Decisions in Processes
       </a>
 </li>
 </ul>
@@ -268,34 +273,6 @@
     Goals:
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#about-bpmn-in-bamoe">8.2 
-    About BPMN in BAMOE
-  </a>
-<nav aria-label="About BPMN in BAMOE" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#note-on-automatic-marshalling">8.2.1 
-    Note on Automatic Marshalling
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cloning-the-project-and-running-quarkus-dev-mode">8.3 
-    Cloning the Project and Running Quarkus Dev Mode
-  </a>
-<nav aria-label="Cloning the Project and Running Quarkus Dev Mode" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#steps">8.3.1 
-    Steps:
-  </a>
-</li>
-</ul>
-</nav>
-</li>
 </ul>
 </nav>
 </div>
@@ -314,109 +291,6 @@
 </ul>
 <hr/>
 <p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8-1.41-1.42Z"></path></svg></span> <em>Let's get started.</em></p>
-<h2 id="about-bpmn-in-bamoe"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.2</span> About BPMN in BAMOE<a class="headerlink" href="#about-bpmn-in-bamoe" title="Permanent link">¶</a></h2>
-<p>BPMN nodes provide a variety of functionalities to automate business processes. Here's a quick overview of some key BPMN nodes and their purposes:</p>
-<table>
-<thead>
-<tr>
-<th><strong>BPMN Node</strong></th>
-<th><strong>Purpose</strong></th>
-<th><strong>When to Use</strong></th>
-<th><strong>Example</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Script Task</td>
-<td>Execute code within process</td>
-<td>Quick, simple logic</td>
-<td>Calculate a value in JavaScript</td>
-</tr>
-<tr>
-<td>Service Task</td>
-<td>Invoke external services</td>
-<td>Integrate with other systems</td>
-<td>Call a REST API</td>
-</tr>
-<tr>
-<td>Human Task</td>
-<td>Involve human interaction</td>
-<td>Manual input/approval needed</td>
-<td>Assign approval to manager</td>
-</tr>
-<tr>
-<td>Timer Event</td>
-<td>Time-based events</td>
-<td>Scheduling, delays, timeouts</td>
-<td>Wait 24h before reminder</td>
-</tr>
-<tr>
-<td>Gateway</td>
-<td>Control process flow</td>
-<td>Decision points, parallel processing</td>
-<td>Route high-value orders differently</td>
-</tr>
-<tr>
-<td>DMN Task</td>
-<td>Execute complex decision logic</td>
-<td>Tabular/tree decisions</td>
-<td>Determine credit eligibility</td>
-</tr>
-</tbody>
-</table>
-<h3 id="note-on-automatic-marshalling"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.2.1</span> Note on Automatic Marshalling<a class="headerlink" href="#note-on-automatic-marshalling" title="Permanent link">¶</a></h3>
-<p>BAMOE auto-maps process variables to DMN inputs/outputs by name and type. Here's a simplified explanation:</p>
-<p><strong>Automatic Marshalling in BAMOE</strong>:</p>
-<p>The <strong>basic principle</strong> of this capability relies on BAMOE usage of Java reflection to convert POJOs (Plain Old Java Objects) to DMN data types and vice versa.</p>
-<p>It can be seen when: </p>
-<ul>
-<li>When passing data from process to DMN: It maps POJO fields to corresponding DMN input fields.</li>
-<li>When receiving data from DMN to process: DMN output is converted back into the appropriate Java object.</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>Matching Criteria</strong>:
-  - Field names in the POJO should match DMN input/output names.
-  - Data types should be compatible (e.g., Java String to DMN string).</p>
-</div>
-<p><strong>Complex Types</strong>:
-  - For nested objects, BAMOE recursively applies the same mapping process.
-  - It can handle lists and maps as well.</p>
-<p>This automatic marshalling simplifies data exchange between BAMOE processes and DMN decision services, reducing the need for manual data transformation in many cases.</p>
-<h2 id="cloning-the-project-and-running-quarkus-dev-mode"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.3</span> Cloning the Project and Running Quarkus Dev Mode<a class="headerlink" href="#cloning-the-project-and-running-quarkus-dev-mode" title="Permanent link">¶</a></h2>
-<p>First, let's clone the starter project to your local repository and set up your environment to run it using Quarkus dev mode.</p>
-<h3 id="steps"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.3.1</span> Steps:<a class="headerlink" href="#steps" title="Permanent link">¶</a></h3>
-<ol>
-<li>
-<p><strong>Clone the Repository</strong>:
-   <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/kmacedovarela/cc-application-approval-starter
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>cc-application-approval-starter
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Run Maven Quarkus Dev Mode</strong>:
-   <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>mvn<span class="w"> </span>quarkus:dev
-</code></pre></div></p>
-</li>
-<li>
-<p>Open the Browser and navigate to http://localhost:8080/q/dev-ui.</p>
-</li>
-<li>
-<p>Locate and click on <em>Process instances</em> in the jBPM Quarkus Dev UI add-on.
-      <img alt="dev-deploy.png" src="images/dev-ui.png"/></p>
-</li>
-<li>
-<p>Start a new process from the process definition list.
-      <img alt="process-def" src="images/starter-start-process-definition.png"/></p>
-<p><img alt="process-def" src="images/start-process.png"/></p>
-</li>
-<li>
-<p>Open the process details, and check the process instance progress, and the variable values.</p>
-<p><img alt="process-def" src="images/3-cc-application-approval.png"/></p>
-</li>
-</ol>
-<hr/>
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8-1.41-1.42Z"></path></svg></span> <em>Awesome!! You've successfully cloned the project and started it using Quarkus dev mode. Next, let's explore how to extend the process design with various tasks in Canvas.</em></p>
 <hr/>
 <div class="md-source-file">
 <small>
@@ -448,13 +322,13 @@
             </div>
 </div>
 </a>
-<a aria-label="Next: Automating Decisions in Processes with DMN" class="md-footer__link md-footer__link--next" href="using-dmn-bpmn/" rel="next">
+<a aria-label="Next: Running a basic process service" class="md-footer__link md-footer__link--next" href="00_intro_process/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Automating Decisions in Processes with DMN
+              Running a basic process service
             </div>
 </div>
 <div class="md-footer__button md-icon">
