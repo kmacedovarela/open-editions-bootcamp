@@ -228,6 +228,9 @@
 <input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index md-nav__link--active">
 <a href="./">Exploring Process Automation</a>
+<label for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+</label>
 </div>
 <nav aria-label="Exploring Process Automation" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_3">
@@ -235,6 +238,11 @@
           Exploring Process Automation
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="using-dmn-bpmn/">
+        Automating Decisions in Processes with DMN
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -360,20 +368,20 @@
 <p>BAMOE auto-maps process variables to DMN inputs/outputs by name and type. Here's a simplified explanation:</p>
 <p><strong>Automatic Marshalling in BAMOE</strong>:</p>
 <p>The <strong>basic principle</strong> of this capability relies on BAMOE usage of Java reflection to convert POJOs (Plain Old Java Objects) to DMN data types and vice versa.</p>
-<p>It can be seen when: 
-  - <strong>When passing data from process to DMN</strong>:
-    - It maps POJO fields to corresponding DMN input fields.
-  - <strong>When receiving data from DMN to process</strong>:
-    - DMN output is converted back into the appropriate Java object.</p>
+<p>It can be seen when: </p>
+<ul>
+<li>When passing data from process to DMN: It maps POJO fields to corresponding DMN input fields.</li>
+<li>When receiving data from DMN to process: DMN output is converted back into the appropriate Java object.</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p><strong>Matching Criteria</strong>:
   - Field names in the POJO should match DMN input/output names.
-  - Data types should be compatible (e.g., Java String to DMN string).
-<strong>Complex Types</strong>:
+  - Data types should be compatible (e.g., Java String to DMN string).</p>
+</div>
+<p><strong>Complex Types</strong>:
   - For nested objects, BAMOE recursively applies the same mapping process.
   - It can handle lists and maps as well.</p>
-</div>
 <p>This automatic marshalling simplifies data exchange between BAMOE processes and DMN decision services, reducing the need for manual data transformation in many cases.</p>
 <h2 id="cloning-the-project-and-running-quarkus-dev-mode"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.3</span> Cloning the Project and Running Quarkus Dev Mode<a class="headerlink" href="#cloning-the-project-and-running-quarkus-dev-mode" title="Permanent link">¶</a></h2>
 <p>First, let's clone the starter project to your local repository and set up your environment to run it using Quarkus dev mode.</p>
@@ -391,15 +399,15 @@
 </code></pre></div></p>
 </li>
 <li>
-<p>Open the Browser and navigate to <code>http://localhost:8080/q/dev-ui</code>.</p>
-<p><img alt="dev-deploy.png" src="images/dev-ui.png"/></p>
+<p>Open the Browser and navigate to http://localhost:8080/q/dev-ui.</p>
 </li>
 <li>
-<p>Locate and click on <em>Process instances</em> in the jBPM Quarkus Dev UI add-on.</p>
-<p><img alt="process-def" src="images/starter-start-process-definition.png"/></p>
+<p>Locate and click on <em>Process instances</em> in the jBPM Quarkus Dev UI add-on.
+      <img alt="dev-deploy.png" src="images/dev-ui.png"/></p>
 </li>
 <li>
-<p>Start a new process from the process definition list.</p>
+<p>Start a new process from the process definition list.
+      <img alt="process-def" src="images/starter-start-process-definition.png"/></p>
 <p><img alt="process-def" src="images/start-process.png"/></p>
 </li>
 <li>
@@ -438,6 +446,19 @@
               </span>
               Exploring Canvas
             </div>
+</div>
+</a>
+<a aria-label="Next: Automating Decisions in Processes with DMN" class="md-footer__link md-footer__link--next" href="using-dmn-bpmn/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Automating Decisions in Processes with DMN
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
 </div>
 </a>
 </nav>
