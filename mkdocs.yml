@@ -3,12 +3,10 @@
 site_name: "Open Editions BootCamp"
 site_description: ""
 site_author: "Karina Varela"
-repo_url: https://github.com/kmacedovarela/open-editions-bootcamp/
+repo_url: https://github.com/kmacedovarela/open-editions-bootcamp
 edit_uri: ""
-site_url: "https://kmacedovarela.github.io/open-editions-bootcamp/"
 extra_css:
   - stylesheets/extra.css
-
 
 plugins:
   - search:

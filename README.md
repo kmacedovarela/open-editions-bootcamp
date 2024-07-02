@@ -1,8 +1,3 @@
-# Learn business automation
-
-Access the labs currently at: https://bamoe.university will be coming to IBM Open Source community soon!
-
----
 
 ## Contributing to this project
 
