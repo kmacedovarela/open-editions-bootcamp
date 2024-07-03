@@ -1,4 +1,3 @@
 nav:
-  - "Exploring Process Automation":
-      - index.md
+  - "Process Automation: Getting Started":
       - ...
