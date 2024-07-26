@@ -16,7 +16,7 @@ To start, let's import a DMN file into Canvas. We will use a credit card eligibi
 
 1. Open Canvas in your browser.
 2. To import the DMN file, in Canvas go to the Import menu and select "From URL".
-3. Copy and paste the following link and click Import: https://example.com/credit-card-eligibility.dmn
+3. Copy and paste the following link and click Import: [[https://example.com/credit-card-eligibility.dmn](https://github.com/kmacedovarela/cc-application-approval-starter/blob/main/src/main/resources/CreditCardEligibility.dmn)](https://github.com/kmacedovarela/cc-application-approval-starter/blob/main/src/main/resources/CreditCardEligibility.dmn) 
 
 ## Credit Card Eligibility DMN Model
 
